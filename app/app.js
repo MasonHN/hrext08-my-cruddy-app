@@ -16,29 +16,45 @@ var updateStatusLabel = function(message) {
  // logic for determining action probably needs to go in the event handler
 $(document).ready(function () {
 	loadLocalStorage();
+	var instrument = 'piano';
+	$('#btn-808').on('click', function(e) {
+			instrument = '808'
+			console.log(instrument)
+			return instrument;
+	});
+
+	$('#btn-piano').on('click', function(e) {
+			instrument = 'piano'
+			console.log(instrument)
+			return instrument;
+	});
+
 	$(document).on('keydown', function(e) {
-  		console.log(e.which);
     if (e.which === 65) {
-		//var audio = new Audio('file:///Users/huntermason/Documents/Samples/Free%20808%20From%20Mars/Maschine/Free%20808%20From%20Mars/Cleancut%20Kit%20-%20Free%20808%20From%20Mars%20Samples/BD%20808%20Noise%2001.wav')
-		var audioA = new Audio('file:///Users/huntermason/Documents/Piano%20Samples/Inst%201C2.wav')
+    	if (instrument === '808') {
+			var audioA = new Audio('file:///Users/huntermason/Documents/Samples/Free%20808%20From%20Mars/Maschine/Free%20808%20From%20Mars/Cleancut%20Kit%20-%20Free%20808%20From%20Mars%20Samples/BD%20808%20Noise%2001.wav')
+		} else {
+			var audioA = new Audio('file:///Users/huntermason/Documents/Piano%20Samples/Inst%201C2.wav')
+		}
 		audioA.play();
-		// $(document).on('keyup', function(e) {
-		// 	if (e.which === 65) {
-		// 		audioA.pause();
-		// 	}
-		// });
     } else if (e.which === 87) {
- 		//var audioSnare = new Audio('file:///Users/huntermason/Documents/Samples/Free%20808%20From%20Mars/Maschine/Free%20808%20From%20Mars/Cleancut%20Kit%20-%20Free%20808%20From%20Mars%20Samples/SD%20B%20808%20Tape%20Tone%20C%2006.wav')
+ 		var audioSnare = new Audio('file:///Users/huntermason/Documents/Samples/Free%20808%20From%20Mars/Maschine/Free%20808%20From%20Mars/Cleancut%20Kit%20-%20Free%20808%20From%20Mars%20Samples/SD%20B%20808%20Tape%20Tone%20C%2006.wav')
 		var audioW = new Audio('file:///Users/huntermason/Documents/Piano%20Samples/Inst%201C%232.wav')
-		//audioSnare.play();
-		//var audioClap = new Audio('file:///Users/huntermason/Documents/Samples/Free%20808%20From%20Mars/Maschine/Free%20808%20From%20Mars/Heavy%20Sat%20Kit%20-%20Free%20808%20From%20Mars%20Samples/Clap%20808%20Sat%20B%2003.wav')
-		//audioClap.play();
-		audioW.play();
+		var audioClap = new Audio('file:///Users/huntermason/Documents/Samples/Free%20808%20From%20Mars/Maschine/Free%20808%20From%20Mars/Heavy%20Sat%20Kit%20-%20Free%20808%20From%20Mars%20Samples/Clap%20808%20Sat%20B%2003.wav')
+		if (instrument === '808') {
+			audioClap.play();
+			audioSnare.play();
+		} else {
+			audioW.play();
+		}
     } else if (e.which === 83) {
-		//var audioHiHat = new Audio('file:///Users/huntermason/Documents/Samples/Free%20808%20From%20Mars/Maschine/Free%20808%20From%20Mars/Cleancut%20Kit%20-%20Free%20808%20From%20Mars%20Samples/CH%20A%20808%20Tape.wav')
+		var audioHiHat = new Audio('file:///Users/huntermason/Documents/Samples/Free%20808%20From%20Mars/Maschine/Free%20808%20From%20Mars/Cleancut%20Kit%20-%20Free%20808%20From%20Mars%20Samples/CH%20A%20808%20Tape.wav')
 		var audioS = new Audio('file:///Users/huntermason/Documents/Piano%20Samples/Inst%201D.wav')
-		//audioHiHat.play();
-		audioS.play();
+		if (instrument === '808') {
+			audioHiHat.play();
+		} else {
+			audioS.play();
+		}
     } else if (e.which === 69) {
     	var audioE = new Audio('file:///Users/huntermason/Documents/Piano%20Samples/Inst%201D%23.wav');
     	audioE.play();
