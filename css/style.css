@@ -1,18 +1,13 @@
-/*
-- [ ] UI/UX considerations (how are we going to use this)
-
-nice contrasting color pallet
-a form that doenst look like its from a circa 2001 webpage
 
 
-advanced content
-state changing styling
-*/
+html { 
+  background: url(file:///Users/huntermason/Desktop/steinway-spirio-r-piano-2.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 
-/*
-	FLEXBOX CONTAINER
-	guide: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
-*/
 .container {
 	display: flex;
 }
@@ -63,10 +58,11 @@ button.button {
 }
 
 img {
-	height: 399px;
+	height: 266px;
 }
 
 #piano-container {
 	display: flex;
 	justify-content: center;
+	margin-top: 25%
 }

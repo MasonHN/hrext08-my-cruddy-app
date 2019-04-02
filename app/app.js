@@ -31,7 +31,7 @@ $(document).ready(function () {
 
 	$(document).on('keydown', function(e) {
     if (e.which === 65) {
-    	$("#C2-Key").prop('src', 'file:///Users/huntermason/Desktop/C%20Key%20copy.jpeg')
+    	$("#C2-Key").prop('src', 'file:///Users/huntermason/Desktop/C%20Key%20copy%202.jpg')
     	if (instrument === '808') {
 			var audioA = new Audio('file:///Users/huntermason/Documents/Samples/Free%20808%20From%20Mars/Maschine/Free%20808%20From%20Mars/Cleancut%20Kit%20-%20Free%20808%20From%20Mars%20Samples/BD%20808%20Noise%2001.wav')
 		} else {
@@ -40,14 +40,14 @@ $(document).ready(function () {
 		audioA.play();
 
 		$(document).on('keyup', function() {
-			$("#C2-Key").prop('src', 'file:///Users/huntermason/Desktop/C%20Key.jpeg')
+			$("#C2-Key").prop('src', 'file:///Users/huntermason/Desktop/C%20Key.jpg')
 		});
 
     } else if (e.which === 87) {
  		var audioSnare = new Audio('file:///Users/huntermason/Documents/Samples/Free%20808%20From%20Mars/Maschine/Free%20808%20From%20Mars/Cleancut%20Kit%20-%20Free%20808%20From%20Mars%20Samples/SD%20B%20808%20Tape%20Tone%20C%2006.wav')
 		var audioW = new Audio('file:///Users/huntermason/Documents/Long%20Piano%20Samples/Piano%20C%232.wav')
 		var audioClap = new Audio('file:///Users/huntermason/Documents/Samples/Free%20808%20From%20Mars/Maschine/Free%20808%20From%20Mars/Heavy%20Sat%20Kit%20-%20Free%20808%20From%20Mars%20Samples/Clap%20808%20Sat%20B%2003.wav')
-    	$("#C2Sharp-Key").prop('src', 'file:///Users/huntermason/Desktop/C%20Sharp%20Key%20copy.jpeg')
+    	$("#C2Sharp-Key").prop('src', 'file:///Users/huntermason/Desktop/C%20Sharp%20Key%20copy.jpg')
 		if (instrument === '808') {
 			audioClap.play();
 			audioSnare.play();
@@ -55,10 +55,10 @@ $(document).ready(function () {
 			audioW.play();
 		}
 		$(document).on('keyup', function() {
-			$("#C2Sharp-Key").prop('src', 'file:///Users/huntermason/Desktop/C%20Sharp%20Key.jpeg')
+			$("#C2Sharp-Key").prop('src', 'file:///Users/huntermason/Desktop/C%20Sharp%20Key.gif')
 		});
     } else if (e.which === 83) {
-    	$("#D2-Key").prop('src', 'file:///Users/huntermason/Desktop/D%20Key%20copy.jpeg')
+    	$("#D2-Key").prop('src', 'file:///Users/huntermason/Desktop/D%20Key%20copy.jpg')
 		var audioHiHat = new Audio('file:///Users/huntermason/Documents/Samples/Free%20808%20From%20Mars/Maschine/Free%20808%20From%20Mars/Cleancut%20Kit%20-%20Free%20808%20From%20Mars%20Samples/CH%20A%20808%20Tape.wav')
 		var audioS = new Audio('file:///Users/huntermason/Documents/Long%20Piano%20Samples/Piano%20D2.wav')
 		if (instrument === '808') {
@@ -67,112 +67,112 @@ $(document).ready(function () {
 			audioS.play();
 		}
 		$(document).on('keyup', function() {
-			$("#D2-Key").prop('src', 'file:///Users/huntermason/Desktop/D%20Key.jpeg')
+			$("#D2-Key").prop('src', 'file:///Users/huntermason/Desktop/D%20Key.gif')
 		});
     } else if (e.which === 69) {
-    	$("#D2Sharp-Key").prop('src', 'file:///Users/huntermason/Desktop/D%20Sharp%20Key%20copy.jpeg')
+    	$("#D2Sharp-Key").prop('src', 'file:///Users/huntermason/Desktop/D%20Sharp%20Key%20copy.jpg')
     	var audioE = new Audio('file:///Users/huntermason/Documents/Long%20Piano%20Samples/Piano%20D%232.wav');
     	audioE.play();
 		$(document).on('keyup', function() {
-			$("#D2Sharp-Key").prop('src', 'file:///Users/huntermason/Desktop/D%20Sharp%20Key.jpeg')
+			$("#D2Sharp-Key").prop('src', 'file:///Users/huntermason/Desktop/D%20Sharp%20Key.gif')
 		});
     } else if (e.which === 68) {
-     	$("#E2-Key").prop('src', 'file:///Users/huntermason/Desktop/E%20Sharp%20Key%20copy.jpeg')
+     	$("#E2-Key").prop('src', 'file:///Users/huntermason/Desktop/E%20Key%20copy.jpg')
     	var audioD = new Audio('file:///Users/huntermason/Documents/Long%20Piano%20Samples/Piano%20E2.wav');
     	audioD.play();
 		$(document).on('keyup', function() {
-			$("#E2-Key").prop('src', 'file:///Users/huntermason/Desktop/E%20Sharp%20Key.jpeg')
+			$("#E2-Key").prop('src', 'file:///Users/huntermason/Desktop/E%20Key.gif')
 		});
     } else if (e.which === 70) {
-    	$("#F2-Key").prop('src', 'file:///Users/huntermason/Desktop/C%20Key%20copy.jpeg')
+    	$("#F2-Key").prop('src', 'file:///Users/huntermason/Desktop/C%20Key%20copy%202.jpg')
     	var audioF = new Audio('file:///Users/huntermason/Documents/Long%20Piano%20Samples/Piano%20F2.wav');
     	audioF.play();
 		$(document).on('keyup', function() {
-			$("#F2-Key").prop('src', 'file:///Users/huntermason/Desktop/C%20Key.jpeg')
+			$("#F2-Key").prop('src', 'file:///Users/huntermason/Desktop/C%20Key.jpg')
 		});
     } else if (e.which === 84) {
-    	$("#F2Sharp-Key").prop('src', 'file:///Users/huntermason/Desktop/C%20Sharp%20Key%20copy.jpeg')
+    	$("#F2Sharp-Key").prop('src', 'file:///Users/huntermason/Desktop/C%20Sharp%20Key%20copy.jpg')
     	var audioT = new Audio('file:///Users/huntermason/Documents/Long%20Piano%20Samples/Piano%20F%232.wav');
     	audioT.play();
 		$(document).on('keyup', function() {
-			$("#F2Sharp-Key").prop('src', 'file:///Users/huntermason/Desktop/C%20Sharp%20Key.jpeg')
+			$("#F2Sharp-Key").prop('src', 'file:///Users/huntermason/Desktop/C%20Sharp%20Key.gif')
 		});
     } else if (e.which === 71) {
-    	$("#G2-Key").prop('src', 'file:///Users/huntermason/Desktop/D%20Key%20copy.jpeg')
+    	$("#G2-Key").prop('src', 'file:///Users/huntermason/Desktop/D%20Key%20copy.jpg')
     	var audioG = new Audio('file:///Users/huntermason/Documents/Long%20Piano%20Samples/Piano%20G2.wav');
     	audioG.play();
 		$(document).on('keyup', function() {
-			$("#G2-Key").prop('src', 'file:///Users/huntermason/Desktop/D%20Key.jpeg')
+			$("#G2-Key").prop('src', 'file:///Users/huntermason/Desktop/D%20Key.gif')
 		});
     } else if (e.which === 89) {
-    	$("#G2Sharp-Key").prop('src', 'file:///Users/huntermason/Desktop/D%20Sharp%20Key%20copy.jpeg')
+    	$("#G2Sharp-Key").prop('src', 'file:///Users/huntermason/Desktop/D%20Sharp%20Key%20copy.jpg')
     	var audioY = new Audio('file:///Users/huntermason/Documents/Long%20Piano%20Samples/Piano%20G%232.wav');
     	audioY.play();
 		$(document).on('keyup', function() {
-			$("#G2Sharp-Key").prop('src', 'file:///Users/huntermason/Desktop/D%20Sharp%20Key.jpeg')
+			$("#G2Sharp-Key").prop('src', 'file:///Users/huntermason/Desktop/D%20Sharp%20Key.gif')
 		});
     } else if (e.which === 72) {
-    	$("#A2-Key").prop('src', 'file:///Users/huntermason/Desktop/D%20Key%20copy.jpeg')
+    	$("#A2-Key").prop('src', 'file:///Users/huntermason/Desktop/D%20Key%20copy.jpg')
     	var audioH = new Audio('file:///Users/huntermason/Documents/Long%20Piano%20Samples/Piano%20A2.wav');
     	audioH.play();
 		$(document).on('keyup', function() {
-			$("#A2-Key").prop('src', 'file:///Users/huntermason/Desktop/D%20Key.jpeg')
+			$("#A2-Key").prop('src', 'file:///Users/huntermason/Desktop/D%20Key.gif')
 		});
     } else if (e.which === 85) {
-    	$("#A2Sharp-Key").prop('src', 'file:///Users/huntermason/Desktop/C%20Sharp%20Key%20copy.jpeg')
+    	$("#A2Sharp-Key").prop('src', 'file:///Users/huntermason/Desktop/C%20Sharp%20Key%20copy.jpg')
     	var audioU = new Audio('file:///Users/huntermason/Documents/Long%20Piano%20Samples/Piano%20A%232.wav');
     	audioU.play();
 		$(document).on('keyup', function() {
-			$("#A2Sharp-Key").prop('src', 'file:///Users/huntermason/Desktop/C%20Sharp%20Key.jpeg')
+			$("#A2Sharp-Key").prop('src', 'file:///Users/huntermason/Desktop/C%20Sharp%20Key.gif')
 		});
     } else if (e.which === 74) {
-    	$("#B2-Key").prop('src', 'file:///Users/huntermason/Desktop/E%20Sharp%20Key%20copy.jpeg')
+    	$("#B2-Key").prop('src', 'file:///Users/huntermason/Desktop/E%20Key%20copy.jpg')
     	var audioJ = new Audio('file:///Users/huntermason/Documents/Long%20Piano%20Samples/Piano%20B2.wav');
     	audioJ.play();
 		$(document).on('keyup', function() {
-			$("#B2-Key").prop('src', 'file:///Users/huntermason/Desktop/E%20Sharp%20Key.jpeg')
+			$("#B2-Key").prop('src', 'file:///Users/huntermason/Desktop/E%20Key.gif')
 		});
     } else if (e.which === 75) {
-    	$("#C3-Key").prop('src', 'file:///Users/huntermason/Desktop/C%20Key%20copy.jpeg')
+    	$("#C3-Key").prop('src', 'file:///Users/huntermason/Desktop/C%20Key%20copy%202.jpg')
     	var audioK = new Audio('file:///Users/huntermason/Documents/Long%20Piano%20Samples/Piano%20C3.wav');
     	audioK.play();
 		$(document).on('keyup', function() {
-			$("#C3-Key").prop('src', 'file:///Users/huntermason/Desktop/C%20Key.jpeg')
+			$("#C3-Key").prop('src', 'file:///Users/huntermason/Desktop/C%20Key.jpg')
 		});
     } else if (e.which === 79) {
-    	$("#C3Sharp-Key").prop('src', 'file:///Users/huntermason/Desktop/C%20Sharp%20Key%20copy.jpeg')
+    	$("#C3Sharp-Key").prop('src', 'file:///Users/huntermason/Desktop/C%20Sharp%20Key%20copy.jpg')
     	var audioO = new Audio('file:///Users/huntermason/Documents/Long%20Piano%20Samples/Piano%20C%233.wav');
     	audioO.play();
 		$(document).on('keyup', function() {
-			$("#C3Sharp-Key").prop('src', 'file:///Users/huntermason/Desktop/C%20Sharp%20Key.jpeg')
+			$("#C3Sharp-Key").prop('src', 'file:///Users/huntermason/Desktop/C%20Sharp%20Key.gif')
 		});
     } else if (e.which === 76) {
-    	$("#D3-Key").prop('src', 'file:///Users/huntermason/Desktop/D%20Key%20copy.jpeg')
+    	$("#D3-Key").prop('src', 'file:///Users/huntermason/Desktop/D%20Key%20copy.jpg')
     	var audioL = new Audio('file:///Users/huntermason/Documents/Long%20Piano%20Samples/Piano%20D3.wav');
     	audioL.play();
 		$(document).on('keyup', function() {
-			$("#D3-Key").prop('src', 'file:///Users/huntermason/Desktop/D%20Key.jpeg')
+			$("#D3-Key").prop('src', 'file:///Users/huntermason/Desktop/D%20Key.gif')
 		});
     } else if (e.which === 80) {
-    	$("#D3Sharp-Key").prop('src', 'file:///Users/huntermason/Desktop/D%20Sharp%20Key%20copy.jpeg')
+    	$("#D3Sharp-Key").prop('src', 'file:///Users/huntermason/Desktop/D%20Sharp%20Key%20copy.jpg')
     	var audioP = new Audio('file:///Users/huntermason/Documents/Long%20Piano%20Samples/Piano%20D%233.wav');
     	audioP.play();
 		$(document).on('keyup', function() {
-			$("#D3Sharp-Key").prop('src', 'file:///Users/huntermason/Desktop/D%20Sharp%20Key.jpeg')
+			$("#D3Sharp-Key").prop('src', 'file:///Users/huntermason/Desktop/D%20Sharp%20Key.gif')
 		});
     } else if (e.which === 186) {
-    	$("#E3-Key").prop('src', 'file:///Users/huntermason/Desktop/E%20Sharp%20Key%20copy.jpeg')
+    	$("#E3-Key").prop('src', 'file:///Users/huntermason/Desktop/E%20Key%20copy.jpg')
     	var audioE3 = new Audio('file:///Users/huntermason/Documents/Long%20Piano%20Samples/Piano%20E3.wav');
     	audioE3.play();
 		$(document).on('keyup', function() {
-			$("#E3-Key").prop('src', 'file:///Users/huntermason/Desktop/E%20Sharp%20Key.jpeg')
+			$("#E3-Key").prop('src', 'file:///Users/huntermason/Desktop/E%20Key.gif')
 		});
     } else if (e.which === 222) {
-    	$("#F3-Key").prop('src', 'file:///Users/huntermason/Desktop/C%20Key%20copy.jpeg')
+    	$("#F3-Key").prop('src', 'file:///Users/huntermason/Desktop/Last%20Key%20copy.jpg')
     	var audioF3 = new Audio('file:///Users/huntermason/Documents/Long%20Piano%20Samples/Piano%20F3.wav');
     	audioF3.play();
 		$(document).on('keyup', function() {
-			$("#F3-Key").prop('src', 'file:///Users/huntermason/Desktop/C%20Key.jpeg')
+			$("#F3-Key").prop('src', 'file:///Users/huntermason/Desktop/Last%20Key.gif')
 		});
     }
 	});
