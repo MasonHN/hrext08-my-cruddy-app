@@ -61,3 +61,12 @@ label {
 button.button {
 	margin-right: 20px;
 }
+
+img {
+	height: 399px;
+}
+
+#piano-container {
+	display: flex;
+	justify-content: center;
+}
