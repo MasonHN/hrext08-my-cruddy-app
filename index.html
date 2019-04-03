@@ -14,7 +14,7 @@
 	<div class="container">
 		<form action="" method="" class="form">
 			<div class="form">
-				<label for="key">Enter key: </label>
+				<label for="key">Piece Name</label>
 				<input type="text" name="key" id="key" required>
 			</div>
 			<div class="form">
@@ -35,7 +35,7 @@
 		<table>
 			<thead>
 				<tr>
-					<th>Key</th>
+					<th>Piece</th>
 					<th>Value</th>
 				</tr>
 			</thead>
@@ -57,6 +57,22 @@
   			<button>stop</button>
   			<button>delete</button>
 			</article> -->
+<!-- 	<div id="staff-paper">
+		<img src="file:///Users/huntermason/Desktop/Staff%20Paper.jpg" id="staff">
+		<div id="notes">
+			<img src="file:///Users/huntermason/Desktop/quarter%20note.png">
+		</div>
+	</div> -->
+	<div id="controls">
+  	 <button id="recordButton">Record</button>
+  	 <button id="pauseButton" disabled>Pause</button>
+  	 <button id="stopButton" disabled>Stop</button>
+    </div>
+
+    <!-- <div id="formats">Format: start recording to see sample rate</div> -->
+  		<h3>Recordings</h3>
+  		<ol id="recordingsList"></ol>
+
 	<div id="piano-container">
 		<img src="file:///Users/huntermason/Desktop/C%20Key.jpg" id="C2-Key">
 		<img src="file:///Users/huntermason/Desktop/C%20Sharp%20Key.gif" alt="C2# Key" id="C2Sharp-Key">
@@ -78,6 +94,9 @@
 		<img src="file:///Users/huntermason/Desktop/Last%20Key.gif" alt="F3 Key" id="F3-Key">
 	</div>
 	<script src="app/app.js"></script>
+	<script src="https://cdn.rawgit.com/mattdiamond/Recorderjs/08e7abd9/dist/recorder.js"></script>
+<!-- 	<script src="recording.js"></script> -->
+
 	
   <!--
    table to view data

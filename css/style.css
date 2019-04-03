@@ -64,5 +64,9 @@ img {
 #piano-container {
 	display: flex;
 	justify-content: center;
-	margin-top: 25%
+	margin-top: 10%
+}
+
+#staff {
+	opacity: 0.4;
 }
