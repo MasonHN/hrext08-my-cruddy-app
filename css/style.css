@@ -1,21 +1,22 @@
 
 
 html { 
-  background: url(file:///Users/huntermason/Desktop/steinway-spirio-r-piano-2.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+	background: url(file:///Users/huntermason/Desktop/steinway-spirio-r-piano-2.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 
 .container {
 	display: flex;
+	justify-content: center;
 }
 
 /*
 	TABLE STYLING 
 */
-table {
+/*table {
 	width: 400px;
 	margin-left: 30px;
 }
@@ -29,32 +30,77 @@ thead,
 tfoot {
     background-color: #333;
     color: #fff;
-}
+}*/
 
-/*
-	FORM STYLING 
-	TODO: validation checking styling 
-*/
 form.form {
 }
 
 div.form {
+	display: flex;
+
 }
 
 label, input {
     margin-bottom: 10px;
     width: 125px;
+
 }
 
 label {
 	display: inline-block;
     padding-right: 10px;
     width: 80px;
+    color: black;
+}
+
+h3 {
+
+	display: flex;
+	justify-content: center;
+}
+
+#controls {
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+#recordButton {
+	background-color: red;
+
 
 }
 
+#pauseButton {
+
+
+}
+
+#stopButton {
+
+}
+
+audio {
+	display: block;
+	width: 30%;
+	margin-top: 0.2rem;
+}
+
+li {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 1rem;
+}
+
 button.button {
+	justify-content: center;
 	margin-right: 20px;
+	height: 35px;
+	width: 100px;
+}
+
+.button:hover {
+	opacity: .4
 }
 
 img {
@@ -65,8 +111,4 @@ img {
 	display: flex;
 	justify-content: center;
 	margin-top: 10%
-}
-
-#staff {
-	opacity: 0.4;
 }

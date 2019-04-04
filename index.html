@@ -6,7 +6,8 @@
 	<script
 		src="https://code.jquery.com/jquery-3.3.1.js"
 		integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-		crossorigin="anonymous"></script>
+		crossorigin="anonymous">			
+	</script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
@@ -14,7 +15,7 @@
 	<div class="container">
 		<form action="" method="" class="form">
 			<div class="form">
-				<label for="key">Piece Name</label>
+				<label for="key">Song Name</label>
 				<input type="text" name="key" id="key" required>
 			</div>
 			<div class="form">
@@ -22,17 +23,18 @@
 				<input type="text" name="value" id="value" required>
 			</div>
 			<div class="form">
-<!-- 				<button class="button" id="record" type= "button">Record</button>
-   				<audio controls></audio> -->
-				<button class="button" id="btn-create" type="button">Create</button>
 				<button class="button" id="btn-update" type="button">Update</button>
 				<button class="button" id="btn-delete" type="button">Delete</button>
 				<button class="button" id="btn-808" type="button">808</button>
 				<button class="button" id="btn-piano" type="button">Piano</button>
 			</div>
-
+			<div id="controls">
+  	 			<button class="button" id="recordButton">&#x25cf; Record</button>
+  	 			<button class="button" id="pauseButton" disabled>&#10073;&#10073; Pause</button>
+  	 			<button class="button" id="stopButton" disabled>&#9726; Stop</button>
+    		</div>
 		</form>	
-		<table>
+<!-- 		<table>
 			<thead>
 				<tr>
 					<th>Piece</th>
@@ -45,33 +47,11 @@
 					<td>test value</td>
 				</tr>
 			</tbody>
-		</table>
+		</table> -->
 
 	</div>
-	<div id="statusLabel">Status:</div>
-<!-- 	<script src="recording.js"></script>
-			<article class="clip">
-  			<audio controls></audio>
-  			<p>your clip name</p>
-  			<button>record</button>
-  			<button>stop</button>
-  			<button>delete</button>
-			</article> -->
-<!-- 	<div id="staff-paper">
-		<img src="file:///Users/huntermason/Desktop/Staff%20Paper.jpg" id="staff">
-		<div id="notes">
-			<img src="file:///Users/huntermason/Desktop/quarter%20note.png">
-		</div>
-	</div> -->
-	<div id="controls">
-  	 <button id="recordButton">Record</button>
-  	 <button id="pauseButton" disabled>Pause</button>
-  	 <button id="stopButton" disabled>Stop</button>
-    </div>
-
-    <!-- <div id="formats">Format: start recording to see sample rate</div> -->
-  		<h3>Recordings</h3>
-  		<ol id="recordingsList"></ol>
+  	<h3>Recordings</h3>
+  	<ol id="recordingsList"></ol>
 
 	<div id="piano-container">
 		<img src="file:///Users/huntermason/Desktop/C%20Key.jpg" id="C2-Key">
