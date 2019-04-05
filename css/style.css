@@ -42,7 +42,7 @@ div.form {
 
 label, input {
     margin-bottom: 10px;
-    width: 125px;
+    width: 300px;
 
 }
 
@@ -97,6 +97,7 @@ button.button {
 	margin-right: 20px;
 	height: 35px;
 	width: 100px;
+	background-color: #d9d9d9;
 }
 
 .button:hover {
@@ -106,6 +107,7 @@ button.button {
 img {
 	height: 266px;
 }
+
 
 #piano-container {
 	display: flex;

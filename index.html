@@ -8,6 +8,7 @@
 		integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
 		crossorigin="anonymous">			
 	</script>
+
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
@@ -19,19 +20,16 @@
 				<input type="text" name="key" id="key" required>
 			</div>
 			<div class="form">
-				<label for="value">Enter value: </label>
-				<input type="text" name="value" id="value" required>
-			</div>
-			<div class="form">
 				<button class="button" id="btn-update" type="button">Update</button>
 				<button class="button" id="btn-delete" type="button">Delete</button>
 				<button class="button" id="btn-808" type="button">808</button>
 				<button class="button" id="btn-piano" type="button">Piano</button>
 			</div>
 			<div id="controls">
-  	 			<button class="button" id="recordButton">&#x25cf; Record</button>
-  	 			<button class="button" id="pauseButton" disabled>&#10073;&#10073; Pause</button>
-  	 			<button class="button" id="stopButton" disabled>&#9726; Stop</button>
+				<button class="button" id="armRecording" type="button">Arm Track</button>
+  	 			<button class="button" id="recordButton" type="button">&#x25cf; Record</button>
+  	 			<button class="button" id="pauseButton" type="button" disabled>&#10073;&#10073; Pause</button>
+  	 			<button class="button" id="stopButton" type="button" disabled>&#9726; Stop</button>
     		</div>
 		</form>	
 <!-- 		<table>
@@ -50,6 +48,8 @@
 		</table> -->
 
 	</div>
+<!-- 	<audio  crossOrigin="anonymous" controls src="https://dl.dropboxusercontent.com/s/8c9m92u1euqnkaz/GershwinWhiteman-RhapsodyInBluePart1.mp3">
+	</audio> -->
   	<h3>Recordings</h3>
   	<ol id="recordingsList"></ol>
 
@@ -75,6 +75,7 @@
 	</div>
 	<script src="app/app.js"></script>
 	<script src="https://cdn.rawgit.com/mattdiamond/Recorderjs/08e7abd9/dist/recorder.js"></script>
+	
 <!-- 	<script src="recording.js"></script> -->
 
 	
